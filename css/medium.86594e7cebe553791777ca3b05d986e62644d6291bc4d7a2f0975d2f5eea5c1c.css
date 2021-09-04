@@ -775,6 +775,7 @@ span.navigation {
 
 .pagination {
     display: block;
+    margin-bottom: 20px;
 }
 
 iframe {
