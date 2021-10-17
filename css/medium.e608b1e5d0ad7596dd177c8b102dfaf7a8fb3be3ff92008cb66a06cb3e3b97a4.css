@@ -970,3 +970,17 @@ iframe {
     display: block!important;
     margin-top: -10px!important;
 }
+
+/ *
+  * home page
+  */
+
+.section-image {
+    width: 100vw;
+    border-style: solid;
+    border-color: #ffffff;
+    border-left-width: 0px;
+    border-right-width: 10px;
+    border-top-width: 0px;
+}
+  
