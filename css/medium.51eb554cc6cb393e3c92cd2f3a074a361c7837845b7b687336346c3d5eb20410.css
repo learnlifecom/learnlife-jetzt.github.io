@@ -1039,3 +1039,7 @@ iframe {
 .herolink:hover {
     color: #55677d;
 }
+
+card-text a {
+    color: #e73922 !important;
+}
