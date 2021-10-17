@@ -971,16 +971,38 @@ iframe {
     margin-top: -10px!important;
 }
 
-/ *
-  * home page
-  */
 
-.section-image {
-    width: 100vw;
-    border-style: solid;
-    border-color: #ffffff;
-    border-left-width: 0px;
-    border-right-width: 10px;
-    border-top-width: 0px;
+@media screen and (min-width: 500px) {
+    .section-image {
+        visibility: visible;
+        width: 100vw;
+        height: 100%;
+        border-style: solid;
+        border-color: #ffffff;
+        border-left-width: 0px;
+        border-right-width: 10px;
+        border-top-width: 0px;
+    }
+    .section-mobile-image {
+        visibility: hidden;
+        height: 0;
+    }
 }
   
+
+@media screen and (max-width: 499px) {
+    .section-image {
+        visibility: hidden;
+        height: 0;
+    }
+    .section-mobile-image {
+        width: 100vw;
+        height: 100%;
+        border-style: solid;
+        border-color: #ffffff;
+        border-left-width: 0px;
+        border-right-width: 10px;
+        border-top-width: 0px;
+        visibility: visible;
+    }
+}
