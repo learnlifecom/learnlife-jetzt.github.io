@@ -972,16 +972,17 @@ iframe {
 }
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 760px) {
+    .section-button {
+        display: inline;
+    }
+    .section-mobile-button {
+        display: none!important;
+    }
     .section-image {
         visibility: visible;
         width: 100vw;
         height: 100%;
-        border-style: solid;
-        border-color: #ffffff;
-        border-left-width: 0px;
-        border-right-width: 10px;
-        border-top-width: 0px;
     }
     .section-mobile-image {
         visibility: hidden;
@@ -990,10 +991,28 @@ iframe {
     .herobutton {
         margin-top: -70px;
     }
+
+    .herobuttons {
+        margin-top: 0;
+        flex-direction: row;
+        background-color: initial;
+        padding: 0;
+    }
+    .herospace {
+        margin-left: 10px;
+        margin-top: 0;
+    }
+    
 }
   
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 759px) {
+    .section-button {
+        display: none!important;
+    }
+    .section-mobile-button {
+        display: inline;
+    }
     .section-image {
         visibility: hidden;
         height: 0;
@@ -1001,20 +1020,28 @@ iframe {
     .section-mobile-image {
         width: 100vw;
         height: 100%;
-        border-style: solid;
-        border-color: #ffffff;
-        border-left-width: 0px;
-        border-right-width: 10px;
-        border-top-width: 0px;
         visibility: visible;
     }
+    .herospace {
+        margin-top: 5px;
+        margin-left: 0;
+    }
     .herobutton {
-        margin-top: -50px;
+        margin-top: 0px;
+    }
+    .herobuttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        background-color: #99d8d8;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }
 
 .herobuttons {
     justify-content: center;
+    display: flex;
 }
 .herobutton {
     margin-left: 10px;
@@ -1024,9 +1051,6 @@ iframe {
     justify-content: center;
     border-radius: 1rem;
     height : 2rem;
-}
-.herospace {
-    margin-left: 10px;
 }
 .herolink {
     margin-top: 3px;
